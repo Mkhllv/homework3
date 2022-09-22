@@ -9,7 +9,10 @@ elif c == '-':
 elif c == '*':
     print(f'Answer: {a * b}')
 elif c == '/':
-    print(f'Answer: {a / b}')
+    if b == 0:
+        print('Division by zero')
+    else:
+        print(f'Answer: {a / b}')
 print()
 
 # Exercise №2
@@ -21,7 +24,7 @@ while b ** 2 < a:
     b += 1
 print()
 
-# Exercise №3
+# # Exercise №3
 print()
 a = int(input('Enter the number: '))
 simple = True
@@ -34,4 +37,3 @@ if simple:
     print("it's a simple number")
 else:
     print("It's not simple number")
-
